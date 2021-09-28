@@ -5,7 +5,7 @@ A novel self-matched design for epidemiological investigations of transient heal
 
 This repository stores tutorials, updated R code, and data for case studies and simulations presented in the article:
 
-Gasparrini A. The case time series design. *Epidemiology*. 2021. Epub ahead of print. DOI: 10.1097/EDE.0000000000001410. PMID: 34432723 [[freely available here](http://www.ag-myresearch.com/2021_gasparrini_epidemiol.html)]
+Gasparrini A. The case time series design. *Epidemiology*. 2021;32(6)829-837. DOI: 10.1097/EDE.0000000000001410. PMID: 34432723 [[freely available here](http://www.ag-myresearch.com/2021_gasparrini_epidemiol.html)]
 
 The three folders refer to material originally presented as online appendices of the article. Specifically:
 

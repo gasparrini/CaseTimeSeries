@@ -3,14 +3,14 @@ title: "The case time series design"
 author: "Antonio Gasparrini"
 date: "`r format(Sys.time(), '%d %B %Y')`"
 output:
+  pdf_document:
+    toc: yes
+    latex_engine: xelatex
   html_document:
     theme: default
     df_print: paged
     toc: yes
     toc_float: yes
-  pdf_document:
-    toc: yes
-    latex_engine: xelatex
   word_document:
     toc: yes
 subtitle: A case study for applications in clinical epidemiology
