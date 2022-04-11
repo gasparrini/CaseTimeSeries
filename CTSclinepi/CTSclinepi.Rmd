@@ -1,16 +1,15 @@
 ---
-title: "The case time series design"
+title: "The case time series design -- eAppendix 1"
 author: "Antonio Gasparrini"
 date: "`r format(Sys.time(), '%d %B %Y')`"
 output:
+  html_document: 
+    toc: yes
+    toc_float: yes
+    self_contained: yes
   pdf_document:
     toc: yes
     latex_engine: xelatex
-  html_document:
-    theme: default
-    df_print: paged
-    toc: yes
-    toc_float: yes
   word_document:
     toc: yes
 subtitle: A case study for applications in clinical epidemiology
@@ -36,7 +35,7 @@ editor_options:
 ```
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo=TRUE, fig.align='center', cache=FALSE)
+knitr::opts_chunk$set(echo=TRUE, fig.align='center', cache=TRUE, cache.lazy=FALSE)
 knitr::opts_knit$set(global.par=TRUE)
 ```
 
@@ -56,7 +55,7 @@ This case study illustrates the application of the case time series design in cl
 The following packages are loaded in the session, and need to be installed to run the R code:
 
 ```{r packages, message=FALSE}
-library(dlnm) ; library(gnm) ; library(mgcv) ; library(pbs)
+library(dlnm) ; library(gnm) ; library(pbs)
 library(data.table) ; library(scales)
 ```
 
