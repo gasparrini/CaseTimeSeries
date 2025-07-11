@@ -3,13 +3,13 @@ title: "The case time series design -- eAppendix 1"
 author: "Antonio Gasparrini"
 date: "`r format(Sys.time(), '%d %B %Y')`"
 output:
+  pdf_document:
+    toc: yes
+    latex_engine: xelatex
   html_document: 
     toc: yes
     toc_float: yes
     self_contained: yes
-  pdf_document:
-    toc: yes
-    latex_engine: xelatex
   word_document:
     toc: yes
 subtitle: A case study for applications in clinical epidemiology
@@ -273,7 +273,7 @@ plot(unique(data$date), unique(data$date), ylim=c(0.5,5+0.5), yaxt="n",
   ylab="", xlab="Follow-up", frame.plot=F)
 axis(2, at=5:1, labels=paste("Sub",1:5), lwd=0, las=1)
 for(i in 5:1) {
-  sub <- subset(data, id==unique(data$id)[i])
+  sub <- subset(data, id==unique(data$id)[6-i])
   flu <- sub$date[sub$flu==1]
   rect(flu+1, rep(i-0.3,length(flu)), flu+91, rep(i+0.3,length(flu)), border=NA,
     col=alpha("gold3",0.3))
